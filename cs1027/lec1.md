@@ -22,10 +22,10 @@ public class Person {
   private String email;
 }
 ```
-* **public:**: you can see it in another class
-* **private**: can't be seen, which is where getter and setter methods come into play (methods can also be private or public)
+* **public:** you can see it in another class
+* **private:** can't be seen, which is where getter and setter methods come into play (methods can also be private or public)
 <b></b>
-* **constructor**: special method that is automatically called when object is created with *new* operator
+* **constructor:** special method that is automatically called when object is created with *new* operator
   * initialize attributes
 ```Java
 /* the constructor */
@@ -34,3 +34,4 @@ public Person(String firstName, String lastName, String email) {
   this.firstName = firstName;
   this.email = email;
 }
+```
