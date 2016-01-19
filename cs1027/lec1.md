@@ -47,14 +47,22 @@ public Person(String firstName, String lastName, String email) {
 * RTS standard commenting
 * **final:** constant type
 * **overloading:** when there is more than one constructor
+  * have a default constructor
 <b></b>
 ## Array
 * arrays have to be set to an initial size (*capacity*)
 ```Java
 friendList = new Person[max_number];
 ```
+* arrays have to have set certain values
 
 * **linear search:** starts at the beginning and continues sequentially
 
 * **modularity:** subdividing a large problem into smaller components (*modules*) making design of solution easier
-* **information hiding:** making implementation details 
+* **information hiding:** making implementation details
+
+## Pass by Reference or Value
+* pass by value makes a copy of the value and pass that, so scope of the value is only within the change
+* pass by reference only gets a reference and so changes affects everything
+
+
