@@ -26,11 +26,9 @@ public interface StackADT<T>
 // Adds one element to the top of this stack
 public void push (T element);
 // Removes and returns the top element from this stack
-public
-T pop( );
+public T pop( );
 // Returns without removing the top element of this stack
-public
-T peek( );
+public T peek( );
 // Returns true if this stack contains no elements
 public boolean isEmpty( );
 // Returns the number of elements in this stack
@@ -158,8 +156,8 @@ public class ArrayStack<T> implements StackADT<T>
 ```
 
 ## Example: Postfix Expressions
-* **infix notation:** operators are between operands, parentheses force preceedence
-* **postfix expression:** operator comes fater its two operands
+* **infix notation:** operators are between operands, parentheses force precedence
+* **postfix expression:** operator comes after its two operands
 **********
 algorithm to evaluate postfix Expressions
 *****
