@@ -112,7 +112,7 @@ queue = (T[])(new Object[initialCapacity]);
 // a reference to it. Throws anEmptyCollectionException if the
 // queue is empty.
 //-----------------------------------------------------------------
-public T dequeue ( ) throws EmptyCollectionExceptio
+public T dequeue ( ) throws EmptyCollectionException
 n
 {
 if (isEmpty( ))

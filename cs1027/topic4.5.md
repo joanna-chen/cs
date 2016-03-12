@@ -41,8 +41,8 @@ public class EmptyCollectionException extends
 * if an exception is not handled, a standard error message is printed by Java runtime system and program is terminated
 
 ## Catching Exceptions
-* to handle exception, a method, or runtime environemnet that detects error during execution ```throws``` an exception
-* code that delas with exception is said to ```catch``` or ```handle``` it
+* to handle exception, a method, or runtime environment that detects error during execution ```throws``` an exception
+* code that deals with exception is said to ```catch``` or ```handle``` it
 
 ### try-catch Statement
 ```Java

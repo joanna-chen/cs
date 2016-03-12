@@ -2,7 +2,7 @@
 * linked list implementation of Stack collection: elements of stack are stored as nodes of the linked list
 
 ## LinkedStack Class
-* nodes in the linekd list are represented by the ```LinearNode``` class
+* nodes in the linked list are represented by the ```LinearNode``` class
 ```java
 //-----------------------------------------------------------------
 // Creates an empty stack.
