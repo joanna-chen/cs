@@ -1,0 +1,14 @@
+# Topic 17: Analysis of Algorithms
+* time complexity expresses relationship between size of input and execution time for algorithm
+
+## Big-O: Formal Definition
+* time complexity T(n) of an algorithm is O(f(n))
+
+## Different Cases
+* **worst case:** considers max of time over all inputs of size n; find upper bound on algorithm performance
+* **average case:** considers average of time over all inputs of size n; determines average (expected) performance
+* **best case:** considers min of time over all inputs of size n
+
+## Intractable Problems
+* **intractable:** solving it by computer is impractical
+* algorithms with time complexity O(2^n) take too long to solve even for moderate values of n
