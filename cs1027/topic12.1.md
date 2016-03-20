@@ -38,4 +38,48 @@ else
 if (current.equals (head))
 head = current.getNext( );
 else
+if (current.equals (tail))
+{
+tail = previous;
+tail.setNext(null);
+}
+else
+previous.setNext(current.getNext( ));
+count--;
+return current.getElement( );
+}
 ```
+
+## Doubly Linked Lists
+* **doubly linked list:** two references in each node, one to ```next``` and one to the ```previous```
+
+```java
+//-----------------------------------------------------------------
+// Removes and returns the specified element.
+//-----------------------------------------------------------------
+public T remove (T element) throws ElementNotFoundException
+{
+  T result;
+  DoubleNode<T> nodeptr = find (element);
+    // uses helper method find for doubly-linked list
+  if (nodeptr == null)
+    throw new ElementNotFoundException ("list");
+  result = nodeptr.getElement( );
+  // check to see if front or rear
+  if (nodeptr == front)
+    result = this.removeFirst( );
+  else
+    if (nodeptr == rear)
+      result = this.removeLast( );
+    else
+    {
+      nodeptr.getNext( ).setPrevious(nodeptr.getPrevious( ));
+      nodeptr.getPrevious( ).setNext(nodeptr.getNext( ));
+      count--;
+    }
+  return result;
+}
+```
+
+## Analysis of List Implementations
+* most operations in both array and linked implementations are O(1) unless there is shifting or searching needed in which ase it is O(n)
