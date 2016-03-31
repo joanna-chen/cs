@@ -54,7 +54,7 @@ while (list is not empty)
 * organize remaining elements into two partitions: greater than pivot and less than pivot
 
 ### Algorithm
-* ```remove``` itms to be sorted from list and ```put``` into empty container
+* ```remove``` items to be sorted from list and ```put``` into empty container
 * if container is not empty
   * randomly get a *pivot*
   * create containers *smaller* and *bigger*, originally empty

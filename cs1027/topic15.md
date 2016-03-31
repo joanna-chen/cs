@@ -62,17 +62,17 @@ public interface BinarySearchTreeADT<T> extends BinaryTreeADT<T> {
 
 ## Analysis of Ordered List Implementations: Linked List vs. Balanced BST
 | Operation      | LinkedList     | BinarySearchTreeList |
-| :------------- | :------------- | :------------- |
-| removeFirst    |   O(1)         | O(log n) |
-| removeLast     | O(n)           | O(log n) |
-| remove         | O(n)           | O(log n) |
-| first          | O(1)           | O(log n) |
-| last           | O(n)           | O(log n) |
-| contains       | O(n)           | O(log n) |
-| isEmpty        | O(1)           | O(1) |
-| size           | O(1)           | O(1) |
-| add            | O(n)           | O(log n) |
+| :------------- | :------------- | :-------------       |
+| removeFirst    | O(1)           | O(log n)             |
+| removeLast     | O(n)           | O(log n)             |
+| remove         | O(n)           | O(log n)             |
+| first          | O(1)           | O(log n)             |
+| last           | O(n)           | O(log n)             |
+| contains       | O(n)           | O(log n)             |
+| isEmpty        | O(1)           | O(1)                 |
+| size           | O(1)           | O(1)                 |
+| add            | O(n)           | O(log n)             |
 
 ## Degenerate Binary Trees
 * without rebalancing, essentially a linked list
-* add operation would be O(n) for a degenerate tree 
+* add operation would be O(n) for a degenerate tree
