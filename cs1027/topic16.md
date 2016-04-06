@@ -1,5 +1,12 @@
 # Topic 16: Sorting
 
+## Bubble Sort
+* repeatedly adjacent elements and swap
+* makes passes through dataset until no swaps needed
+* worst case: O(n^2)
+* best case: O(n)
+  * array already sorted
+
 ## Insertion Sort
 * orders sequence of values by repetitively inserting particular value into sorted subset of sequence
 
@@ -17,6 +24,9 @@
 
 ### Analysis
 * O(n^2) ** more detail in notes
+* worst case: already sorted
+* best case: already sorted backwards O(n)
+* opposite cases for arrays
 
 ## Selection Sort
 * orders sequence of values by repetitively putting particular value into *final* position
@@ -46,7 +56,7 @@ while (list is not empty)
 * to restore list, ```dequeue``` items one at a time from *sorted* and ```add``` to the rear of *list*
 
 ### Analysis
-* O(n^2)
+* O(n^2), no best/worst case
 
 ## Quick Sort
 * orders sequence of values by partitioning list around one element (the pivot or partition element), then sorting each partition
@@ -67,3 +77,12 @@ while (list is not empty)
 
 ### Analysis
 * O(n log n)
+* worst case: pivot is largest or smallest O(n^2)
+* best case & average: pivot is middle O(n log n)
+
+## Heap sort
+* heap: almost complete binary tree with tree completely filled on all levels except possibly lowest, where filled left to right
+* height is O(log n)
+* value of children is less
+* insert or remove is from leaf through its path so O(log n)
+* heap sort: O(n log n)
