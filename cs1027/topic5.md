@@ -6,7 +6,7 @@
   * model object-oriented design
   * overall design: class specifications, how classes interact with each other
   * diagrams use specific icons and notation
-  * *language indpendent*
+  * *language independent*
 
 ## UML Class Design
 * class represented by rectangle divided into 3 sections
